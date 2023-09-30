@@ -14,7 +14,7 @@ public class IntArrayList  implements IntList{
         arr = new int[10];
         size = 0;
     }
-    @Override
+
     public void add(int number) {
         if (size == arr.length) {
             int[] newarr = new int[(int) (arr.length * 1.5)];
@@ -24,12 +24,14 @@ public class IntArrayList  implements IntList{
 
             for (int i = 0; i < arr.length; i++)
             {
-                System.out.println("The value of the new array BEFORE is:" + newarr[i]);
+                System.out.println("The value of the new array[" + i + "] BEFORE is:" + newarr[i]);
                 newarr[i] = arr[i];
-                System.out.println("The value of the new array AFTER is:" + newarr[i]);
+
+                System.out.println("The value of the new array [" + i + "] AFTER is:" + newarr[i]);
             }
 
             System.out.println("The lenght of the arr BEFORE is: " + arr.length);
+            newarr[arr.length] = number;
             arr = newarr;
             System.out.println("The lenght of the arr AFTER is: " + arr.length);
         }
@@ -37,11 +39,14 @@ public class IntArrayList  implements IntList{
             System.out.println("There is an error in: " + number);
             arr[size] = number;
         }
-        size++;
-    }
+      size++;
+
+}
+
     @Override
     public int get(int j) {
-        return 1;
+
+        return arr[j];
     }
 }
 

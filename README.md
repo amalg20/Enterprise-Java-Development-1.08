@@ -20,10 +20,14 @@ I create new project called intlistinterface and inside this package I create tw
 They have the different lengths and different calculates.
 
 **For Example:**
+
 1. IntArray list grows slower.
 2. IntVector grows faster.
 
 3. IntArray grows with 1.5 **->**            15, 23, 35, 53, 80 ....
 4. IntVector grows with a power of 2. **->**  10, 20, 40, 80, 160, 320, 640, 1280, 2560...
+  
+5. IntArray list grows slower and it more efficient when we need to store a few numbers to keep the memory's space and don't take no needed memory's spaces.
+6. IntVector grows faster and it be more efficient when we need to store more numbers and go faster throught them where the time is important here to reach the specific result so the intVector will be better to use.
 
 

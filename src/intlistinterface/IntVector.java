@@ -21,26 +21,27 @@ public class IntVector implements IntList {
             System.out.println("We're increasing the vector lenght " + newArray.length);
 
 
-            for (int i = 0; i < arr2.length; i++)
-            {
-                System.out.println("The value of the new vector BEFORE is:" + newArray[i]);
+            for (int i = 0; i < arr2.length; i++) {
+                System.out.println("The value of the new vector of index" + i + " BEFORE is:" + newArray[i]);
                 newArray[i] = arr2[i];
-                System.out.println("The value of the new vector AFTER is:" + newArray[i]);
+                System.out.println("The value of the new vector of index" + i + " AFTER is:" + newArray[i]);
             }
 
             System.out.println("The lenght of the vector BEFORE is: " + arr2.length);
+            newArray[arr2.length] = number;
             arr2 = newArray;
             System.out.println("The lenght of the vector AFTER is: " + arr2.length);
-        }
-        else{
+        } else {
             System.out.println("There is an error in: " + number);
             arr2[size] = number;
         }
-        size++;
-    }
+     size++;
+}
+
     @Override
-    public int get(int i) {
-        return 1;
+    public int get(int id) {
+
+        return arr2[id];
     }
 }
 
